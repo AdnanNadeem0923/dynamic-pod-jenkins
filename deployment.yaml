@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: hellp-app
-        image: asia-south1-docker.pkg.dev/cloudside-academy/jenkins/hellp-app:latest
+        image: us-central1-docker.pkg.dev/cloudside-academy/jn-dynamic/hellp-app
         ports:
         - containerPort: 8080
         resources:
