@@ -2,23 +2,23 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: helloweb
-  namespace: platform
+  namespace: jenkins
   labels:
-    app: hello
+    app: hellp
 spec:
   selector:
     matchLabels:
-      app: hello
+      app: hellp
       tier: web
   template:
     metadata:
       labels:
-        app: hello
+        app: hellp
         tier: web
     spec:
       containers:
-      - name: hello-app
-        image: asia-south1-docker.pkg.dev/PROJECT_ID/jenkins/hello-app:latest
+      - name: hellp-app
+        image: asia-south1-docker.pkg.dev/PROJECT_ID/jenkins/hellp-app:latest
         ports:
         - containerPort: 8080
         resources:
